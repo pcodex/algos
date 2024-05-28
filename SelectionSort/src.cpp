@@ -11,12 +11,12 @@ class SelSort
 public:
 	vector<int> doSort(vector<int> inp)
 	{		
-		vector<int> op;
+		vector<int> op; //srray of sorted elements
 		while(inp.size()>0)
 		{
 			int min = inp[0];
 			int minidx = 0;
-			//each time pick the minimum element and move it into an array
+			//each time pick the minimum element and move it into the sorted array
 			for (int j = 0; j < inp.size(); ++j)
 			{
 				if (inp[j] < min) {
