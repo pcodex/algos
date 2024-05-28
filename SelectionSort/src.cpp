@@ -21,6 +21,7 @@ public:
 			{
 				if (inp[j] < min) {
 					min = inp[j];
+					//keep track of the minimum element's index
 					minidx = j;
 				}
 			}
