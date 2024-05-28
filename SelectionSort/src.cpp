@@ -16,6 +16,7 @@ public:
 		{
 			int min = inp[0];
 			int minidx = 0;
+			//each time pick the minimum element and move it into an array
 			for (int j = 0; j < inp.size(); ++j)
 			{
 				if (inp[j] < min) {
@@ -25,6 +26,7 @@ public:
 			}
 
 			op.push_back(min);
+			//remove the min element from the original array
 			inp.erase(inp.begin() + minidx);
 		}
 		return op;		
